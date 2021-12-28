@@ -1,0 +1,185 @@
+<!DOCTYPE>
+<html>
+        <head>
+                <title> Gifts </title>
+                <meta charset='UTF-8'>
+                <link rel="stylesheet" type="text/css" href="lmm.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        </head>
+        <body>
+<script>
+var xhr; 
+    if (window.ActiveXObject) { 
+        xhr = new ActiveXObject ("Microsoft.XMLHTTP"); 
+    } 
+    else if (window.XMLHttpRequest) { 
+        xhr = new XMLHttpRequest (); 
+    } 
+var url = "https://spring-2019.cs.utexas.edu/cs329e-mitra/charolia/lmmAdmin/allItems.php";
+xhr.open("GET", url,true);
+xhr.onreadystatechange = updatePage; 
+xhr.send(null); 
+function updatePage() { 
+    if (xhr.readyState == 4) { 
+        if (xhr.status == 200) { 
+            var response = xhr.responseText.split(","); 
+            response.pop();
+console.log("Response", response);                              
+var subarray = [];
+var superarray = [];
+var count = 0;
+for(var i =0; i < response.length; i++){
+
+subarray.push(response[i]);
+if(count == 6){
+        count = 0;
+        superarray.push(subarray);
+        subarray =  []
+}else{
+count++
+}
+
+}
+console.log(superarray);
+for(var i = 0; i < superarray.length; i++){
+var name = superarray[i][1];
+var price = superarray[i][2];
+var method = superarray[i][3];
+var store = superarray[i][4];
+var hours = superarray[i][5];
+var image = superarray[i][6];
+console.log("Name", name);
+$( ".items" ).append( "<div class='item'><input type='image' src="+image+"><p> Name:"+ name+"</p><p> Price:"+ price+"</p><p> Method:" +method +"</p><p> Carrying Store:"+ store+"</p><p> Store Hours:"+hours+" </p></div>");
+} 
+//$( ".items" ).append( "<div class='item'><input type='image' src='giftspics/KendraScottNecklace.jpg'><p> Name:"+ response[1]+"</p><p> Price:"+ response[2]+"</p><p> Method:" +response[3] +"</p><p> Carrying Store:"+ response[4] +"</p><p> Store Hours:"+response[5]+" </p></div>");
+} 
+    } 
+} 
+
+</script>
+<div class="home1">
+<div class="nav2">
+<nav style="background-color:#FAEBD7" class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="lmm.html"><img src="logoRed.png" width="30" height="30" class="d-inline-block align-top" alt="">Last Minute Man</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link"  href="lmm.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="gifts.html">Gifts</a>
+      <a class="nav-item nav-link" href="experiences.html">Resources</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="giftsimages">
+    <div class="resultTitle">
+        </div>
+            <div class="items">
+<!--
+<a href="google.com" class="child"><img src="https://freeiconshop.com/wp-content/uploads/edd/gift-flat.png" height="150" width="150" border="4">Gift 1</a>
+<a href="google.com" class="child"><img src="https://freeiconshop.com/wp-content/uploads/edd/wine-bottle-flat.png" height="150" width="150" border="4"></a>
+<a href="google.com" class="child"><img src="https://freeiconshop.com/wp-content/uploads/edd/bookmark-alt-flat.png" height="150" width="150" border="4"></a>
+-->
+
+<div class="item">
+<input type="image" src="KendraScottNecklace.jpg">
+<p> Name: Kendra Scott Necklace Collection </p>
+<p> Price: $50.00 - $100.00 </p>
+<p> Method: Instant Pickup </p>
+<p> Carrying Store: Kendra Scott </p>
+<p> Distance: 15 min </p>
+<p> Store Hours: 9AM - 7PM </p>
+</div>
+
+<div class="item">
+<input type="image" src="NightSky.png">
+        <p> Name: Night Sky Poster </p>
+<p> Price: $60.00 </p>
+<p> Method: Delivery </p>
+<p> Time Till Acquired: 2 Business Days </p>
+<p> Store Hours: 24/7 Online Website </p>
+</div>
+<div class="item">
+<input type="image" src="Polaroid.png">
+        <p> Name: OneStep 2 Viewfinder i-Type Camera</p>
+<p> Price: $89.99 </p>
+<p> Method: Instant Pick-up / 3 Day Delivery </p>
+<p> Carrying Store: BestBuy </p>
+<p> Distance: 12 Min </p>
+<p> Store Hours: 7AM - 5PM </p>
+</div>
+<div class="item">
+<input type="image" src="SnoopToCook.jpg">
+        <p> Name: From Crook to Cook: Platinum Recipes from Snoop Dog </p>
+<p> Price: $16.48 </p>
+<p> Method: Delivery </p>
+<p> Time Till Acquired: 2 Business Days </p>
+<p> Store Hours: 24/7 - Amazon </p>
+</div>
+<div class="item">
+<input type="image" src="Roomba.png">
+        <p> Name: iRobot Roomba 690 Wi-Fi Connected Robot Vacuum </p>
+<p> Price: $279.99 </p>
+<p> Method: Pick-Up </p>
+<p> Carrying Store: Target </p>
+<p> Distance: 8 Min </p>
+<p> Store Hours: 8AM - 4 PM </p>
+</div>
+<div class="item">
+<input type="image" src="PatagoniaSweater.jpg">
+        <p> Name: Patagonia Sweater </p>
+<p> Price: $75.00 - $100.00 </p>
+<p> Method: Pick-Up </p>
+<p> Carrying Store: Sun and Ski Sports </p>
+<p> Distance: 20 Min </p>
+<p> Store Hours: 9AM - 4PM </p>
+</div>
+<div class="item">
+<input type="image" src="FitBit.png">
+        <p> Name: FitBit Charge 3</p>
+<p> Price: $110.00 - $150.00 </p>
+<p> Method: Pick-Up/ 2 Day Delivery </p>
+<p> Carrying Store: UT Campus Computer Store </p>
+<p> Distance: 13 Min</p>
+<p> Store Hours: 9AM - 5PM </p>
+</div>
+<div class="item">
+<input type="image" src="MichelleObama.jpg">
+        <p> Name: Becoming by Michelle Obama </p>
+<p> Price: $13.86 </p>
+<p> Method: Pick-Up/ 2 Day Delivery </p>
+<p> Carrying Store: Barnes and Nobles </p>
+<p> Distance: 25 Min</p>
+<p> Store Hours: 9AM - 5PM </p>
+</div>
+<div class="item">
+<input type="image" src="Massage.png">
+        <p> Name: Viva Day Spa Gift Certificate - Full Body Massage </p>
+<p> Price: $50.00 - $80.00 </p>
+<p> Method: Online </p>
+<p> Carrying Store: Viva Day Spa </p>
+<p> Time Till Acquired: Instant Purchase</p>
+<p> Store Hours: 24/7 Online Store</p>
+</div>
+<div class="item">
+<input type="image" src="Coffee.jpg">
+        <p> Name: OXO BREW Glass Pour-Over Set</p>
+<p> Price: $33.36 </p>
+<p> Method: Pick-Up / 2 Day Delivery </p>
+<p> Carrying Store: Home Goods </p>
+<p> Distance: 17 Min</p>
+<p> Store Hours: 9AM - 5PM </p>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
