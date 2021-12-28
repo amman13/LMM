@@ -1,0 +1,443 @@
+html,body{
+        margin:0px;
+        padding:0px;
+}
+.resultTitle{
+
+text-decoration: underline;
+padding-left: 10px;
+padding-top: 10px;
+}
+.child {
+  flex: 1 0 18%; /* explanation below */
+  margin: 5px;
+  height: 100px;
+}
+.giftsimages input[type="image"]{
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        width: 150px;
+        height:150px;
+        border: 2px solid #FAEBD7;
+        margin-top:15px;
+        margin-bottom: 15px;
+
+}
+.item{
+display: flex;
+flex-direction: column;
+font-size: 15px;
+ flex: 1 0 18%; /* explanation below */
+  margin: 10px;
+  margin-top: 50px;
+  margin-left: 0px;
+  background-color: white;
+  border-radius: 25px;
+  border: 4px solid #800101;
+}
+.item p {
+        margin-left: 5px;
+        margin-top: 1px;
+        font-size: 10pt;
+}
+.items{
+display: flex;
+height: 100%;
+padding: 10px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.giftsimages{
+background-image:url("lightwood.jpg");
+background-size: 100% 100%;
+}
+
+.middlebottom{
+        display: flex;
+        flex-direction: column;
+        background-image:url("WebsiteBackdrop.jpg");
+        background-size: 100% 100%;
+        height: 120%;
+        padding: 5px;
+}
+.info{
+        display: flex;
+height: 40%;
+width: 100%;
+margin-bottom: 5%;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+}
+#infoq{
+        background: #FAEBD7;
+        border: 7px solid #800101;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        padding: 10px;
+        margin: 5px;
+        align-items: center;
+}
+#infoq img {
+        max-width:100%;
+        max-height:100%;
+}
+#infoa {
+        border: 7px solid #800101;
+        background: #FAEBD7;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        padding: 5px;
+        margin: 10px;
+        align-items: center;
+        justify-content: space-between;
+}
+
+#infoa p {
+        font-size: 13pt;
+        margin: 30px;
+        color: #800101;
+        font-style: oblique;
+        font-weight: bold;
+}
+.clickbait {
+        display: flex;
+        background-color: ;
+        height: 50%;
+        width: 100%;
+        padding: 5px;
+        padding-top: 20px;
+}
+.partner {
+        border: 7px solid #800101;
+        background: #FAEBD7;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 33.3%;
+        margin: 5px;
+        text-align: center;
+        padding: 10px 10px;
+        justify-content: space-between;
+}
+
+#last {
+        color: #800101;
+}
+
+.partner h3 {
+        color:#5A483B;
+        text-decoration: underline;
+}
+
+.gifter{
+        border: 7px solid #800101;
+        background: #FAEBD7;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        margin: 5px;
+        text-align: center;
+        padding: 10px 10px;
+        justify-content: space-between;
+}
+.gifter h3 {
+        color:#5A483B;
+        text-decoration: underline;
+}
+.careers {
+border: 7px solid #800101;
+background: #FAEBD7;    
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        margin: 5px;
+        text-align: center;
+        padding: 10px 10px;
+        justify-content: space-between;}
+
+.careers h3 {
+        color:#5A483B;
+        text-decoration: underline;
+}
+.bottom{
+display: flex;
+height: 80%;
+font-size: 10px;
+padding: 10px;
+flex-direction: row;
+background-image:url("Bottomimagehalf.jpeg");
+background-size: 100% 100%;
+color: white;
+}
+
+.bottom1{
+display: flex;
+height: 45%;
+font-size: 10px;
+padding: 10px;
+flex-direction: row;
+background-image:url("Bottomimagehalf.jpeg");
+background-size: 100%;
+color: white;
+}
+
+.home{
+height: 310%;
+display: flex;
+flex-direction: column;
+}
+.home1{
+display: flex;
+height: 150%;
+flex-direction: column;
+border: 2px solid black;
+}
+.howtogift{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        background:#FAEBD7;
+}
+.howtogift1{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 100%;
+        border: 2px solid #5A483B;
+        text-align: center;
+        padding-top: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+.howtogift2{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 100%;
+        border: 2px solid #5A483B;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding-top: 15px;
+}
+.externalmedia {
+        display: flex;
+        height: 85%;
+        width: 100%;
+}
+.threesplit{
+        border: 3px solid #800101;
+        height: 100%;
+        width: 33.3%;
+        margin-bottom: 15px;
+        align-items: center;
+        padding: 5px;
+        text-align: center;
+}
+.threesplit video {
+        object-fit: contain;
+}
+
+#question{
+color: white;
+}
+
+p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+}
+.nav1{
+display: flex;
+background: #FAEBD7;
+border-bottom: 4px solid #800101;
+}
+
+.nav2{
+display: flex;
+background: #FAEBD7;
+border-bottom: 4px solid #800101;
+
+}
+
+.bottominfo {
+        text-align: left;
+        font-size: 10pt;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+}
+
+.middlePart{
+display: flex;
+flex-direction: column;
+height: 100%;
+background-image:url("Gift.jpg");
+background-size: 100%;
+align-items: center;
+justify-content: center;
+}
+#catchphrase {
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        width: 300px;
+        font-size: 40px;
+}
+#startbutton {
+        position: absolute;
+        top:350px;
+        left:100px;
+        padding: 10px 50px;
+}
+a {
+        text-decoration: none;
+        color: #FAEBD7;
+}
+
+#contactPageClicked{
+text-decoration: underline;
+}
+
+/* Quiz Form Css */
+
+
+.quizcontainer {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        background-color: #FAEBD7;
+}
+.quizbody {
+
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        background-image:url("WebsiteBackdrop.jpg");
+        background-size: 100% 100%;
+        color: white;
+        text-align:center;
+        height: 100%;
+}
+h4 {
+        padding-bottom: 50px;
+}
+
+input[type="radio"]{
+  margin: 0 10px 0 10px;
+}
+.quizsection{
+        display: flex;
+        height: 30%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        color: black;
+        border-radius: 25px;
+        background-color: #FAEBD7;
+        padding:2.5em;
+}
+.form-control{
+width: 20px;
+
+}
+
+#q6 , #lmmimage {
+    margin-left: 45px;
+}
+
+#q6q {
+    margin-right: 40px;
+}
+
+#q4 , #nextq {
+
+    margin-left: 45px;
+}
+
+#q4q {
+    margin-right: 40px;
+}
+
+#q5q {
+    margin-right: 40px;
+}
+
+
+
+.quizInput, #q4 {
+    display: flex;
+    width: 750px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .quizInput, #q6 {
+    display: flex;
+    width: 750px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+
+.quizInput{
+display: flex;
+width: 750px;
+padding: 18px;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
+align-items: center;
+}
+
+.inputAddress{
+        height: 30px;
+        width: 300px;
+
+}
+#lmmimage {
+        height: 60px;
+        width: 60px;
+}
+
+input.invalid,textarea.invalid {
+        border: 4px solid red ;
+}
+input.valid,textarea.valid {
+        border: 4px solid green;
+}
+#nextq:hover{
+background-color: #5A483B;
+cursor: pointer;
+}
+#nextq{
+border: 2px solid #800101;
+border-radius: 5px;
+}
+#lmmimage:hover{
+
+background-color: #5A483B;
+cursor: pointer;
+}
+#lmmimage{
+border: 2px solid #800101;
+border-radius: 5px;
+}
+
